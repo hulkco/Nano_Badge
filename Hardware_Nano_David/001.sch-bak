@@ -196,7 +196,7 @@ Wire Wire Line
 Text Label 4200 2725 0    50   ~ 0
 ~D9
 $Comp
-L 001-rescue:2019.All.Mask.02-ArduinoBadge U1
+L ArduinoBadge:2019.All.Mask.02 U1
 U 1 1 5C5C8D11
 P 1125 5650
 F 0 "U1" H 1265 5696 50  0000 L CNN
@@ -230,8 +230,8 @@ $Comp
 L Arduino-nano-33:Arduino-NANO-33 J1
 U 1 1 5E389B4D
 P 3425 3175
-F 0 "J1" H 3425 4290 50  0000 C CNN
-F 1 "New_Arduino_NANO" H 3425 4199 50  0000 C CNN
+F 0 "J1" H 3425 4200 50  0000 C CNN
+F 1 "New_Arduino_NANO" H 3425 4199 50  0001 C CNN
 F 2 "NANO_Badge_01:NANO_33_SMD_Socket" H 3100 3075 50  0001 C CNN
 F 3 "~" H 3100 3075 50  0001 C CNN
 	1    3425 3175
@@ -554,7 +554,7 @@ F 3 "~" H 6700 5275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 001-rescue:2019.All.Mask.02-ArduinoBadge U2
+L ArduinoBadge:2019.All.Mask.02 U2
 U 1 1 5E3A877D
 P 1100 5950
 F 0 "U2" H 1240 5996 50  0000 L CNN
@@ -565,7 +565,7 @@ F 3 "" H 1100 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 001-rescue:2019.All.Mask.02-ArduinoBadge U4
+L ArduinoBadge:2019.All.Mask.02 U4
 U 1 1 5E3A8974
 P 1100 6575
 F 0 "U4" H 1240 6621 50  0000 L CNN
@@ -576,7 +576,7 @@ F 3 "" H 1100 6575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 001-rescue:2019.All.Mask.02-ArduinoBadge U3
+L ArduinoBadge:2019.All.Mask.02 U3
 U 1 1 5E3A8EB9
 P 1100 6250
 F 0 "U3" H 1240 6296 50  0000 L CNN
@@ -587,7 +587,7 @@ F 3 "" H 1100 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 001-rescue:2019.All.Mask.02-ArduinoBadge U5
+L ArduinoBadge:2019.All.Mask.02 U5
 U 1 1 5E3AA039
 P 1100 6875
 F 0 "U5" H 1240 6921 50  0000 L CNN
@@ -595,6 +595,51 @@ F 1 "OSHPARK" H 1240 6830 50  0000 L CNN
 F 2 "NANO_Badge_01:OSHpark-2-1800" H 1100 6875 50  0001 C CNN
 F 3 "" H 1100 6875 50  0001 C CNN
 	1    1100 6875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5E522179
+P 3300 1225
+F 0 "J2" H 3300 1350 50  0000 C CNN
+F 1 "Conn_01x02" H 3450 1350 50  0001 C CNN
+F 2 "NANO_Badge_01:JST-S2B-PH-SM4-TB" H 3300 1225 50  0001 C CNN
+F 3 "~" H 3300 1225 50  0001 C CNN
+	1    3300 1225
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1325 3625 1325
+Wire Wire Line
+	3500 1225 3625 1225
+$Comp
+L 001-rescue:VIN-power #PWR011
+U 1 1 5E52D9BC
+P 3625 1225
+F 0 "#PWR011" H 3625 1125 50  0001 C CNN
+F 1 "VIN" H 3700 1300 50  0000 L CNN
+F 2 "" H 3625 1225 50  0001 C CNN
+F 3 "" H 3625 1225 50  0001 C CNN
+	1    3625 1225
+	1    0    0    -1  
+$EndComp
+Text Notes 2900 975  0    138  ~ 28
+LIPO Batery
+Text Notes 2700 2025 0    138  ~ 28
+Arduino NANO
+Text Notes 6725 1300 0    138  ~ 28
+Leds
+Text Notes 675  5400 0    138  ~ 28
+Extra Footprints
+$Comp
+L power:GND #PWR012
+U 1 1 5E53FBD0
+P 3625 1325
+F 0 "#PWR012" H 3625 1075 50  0001 C CNN
+F 1 "GND" H 3775 1250 50  0000 C CNN
+F 2 "" H 3625 1325 50  0001 C CNN
+F 3 "" H 3625 1325 50  0001 C CNN
+	1    3625 1325
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
