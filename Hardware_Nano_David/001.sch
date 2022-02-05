@@ -227,7 +227,7 @@ Connection ~ 7550 2175
 Wire Wire Line
 	7550 2175 7550 1725
 $Comp
-L Arduino-nano-33:Arduino-NANO-33 J1
+L 001-rescue:Arduino-NANO-33-Arduino-nano-33 J1
 U 1 1 5E389B4D
 P 3425 3175
 F 0 "J1" H 3425 4200 50  0000 C CNN

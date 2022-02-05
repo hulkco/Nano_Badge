@@ -1,26 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# 001-rescue_VIN-power
+# 001-rescue_Arduino-NANO-33-Arduino-nano-33
 #
-DEF 001-rescue_VIN-power #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -100 50 H I C CNN
-F1 "001-rescue_VIN-power" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X VIN 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# Arduino-nano-33_Arduino-NANO-33
-#
-DEF Arduino-nano-33_Arduino-NANO-33 J 0 40 Y Y 1 F N
+DEF 001-rescue_Arduino-NANO-33-Arduino-nano-33 J 0 40 Y Y 1 F N
 F0 "J" 0 1025 50 H V C CNN
-F1 "Arduino-nano-33_Arduino-NANO-33" 50 -900 50 H V C CNN
+F1 "001-rescue_Arduino-NANO-33-Arduino-nano-33" 50 -900 50 H V C CNN
 F2 "" -325 -100 50 H I C CNN
 F3 "" -325 -100 50 H I C CNN
 $FPLIST
@@ -61,6 +46,21 @@ X A2 6 -650 250 150 R 50 50 1 1 P
 X A3 7 -650 150 150 R 50 50 1 1 P
 X A4/SDA 8 -650 50 150 R 50 50 1 1 P
 X A5/SCL 9 -650 -50 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 001-rescue_VIN-power
+#
+DEF 001-rescue_VIN-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -100 50 H I C CNN
+F1 "001-rescue_VIN-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X VIN 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
@@ -108,9 +108,9 @@ $FPLIST
  LED_THT:*
 $ENDFPLIST
 DRAW
-P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 10 -50 -50 -50 50 N
 P 2 0 1 0 -50 0 50 0 N
-P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
 P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
 P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
 X K 1 -150 0 100 R 50 50 1 1 P
